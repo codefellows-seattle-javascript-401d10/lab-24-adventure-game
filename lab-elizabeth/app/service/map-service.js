@@ -11,6 +11,18 @@ function mapService($log){
   let service = {};
   //add features to service
   service.mapData = {
+    Outside: {
+      desc: '',
+      items: [],
+      north: '',
+      northdesc: '',
+      south: '',
+      southdesc: '',
+      east: '',
+      eastdesc: '',
+      west: '',
+      westdesc: '',
+    },
     Entry: {
       desc: '',
       items: [],
