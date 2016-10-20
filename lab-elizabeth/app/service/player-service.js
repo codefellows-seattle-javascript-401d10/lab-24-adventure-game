@@ -15,13 +15,13 @@ function playerService($q, $log, mapService){
     name: 'Surviver',
     location: 'Entry',
     hp: 20,
-    inventory: [],
+    inventory: ['tin of beans', 'stick'],
   };
 
   let history = service.history = [
     {
       turn,
-      desc: '',
+      desc: 'You have found a house that looks like it\'s still holding together. Maybe you can find some more supplies.',
       location: 'Entry',
       hp: player.hp,
       inventory: player.inventory,
@@ -36,7 +36,7 @@ function playerService($q, $log, mapService){
       if (!newLocation){
         history.unshift({
           turn,
-          desc: '',
+          desc: 'You can\'t go that direction from here.',
           location: player.location,
           hp: player.hp,
         });
