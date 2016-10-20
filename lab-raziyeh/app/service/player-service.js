@@ -7,18 +7,18 @@ ngAdventure.factory('playerService', ['$q', '$log', 'mapService', function($q, $
   $log.debug('init playerService');
 
   let service = {},
-      turn = 0,
-      player = service.player = {
-		name: 'Player 1',
-		location: 'Room_A',
-		hp: 0,
-	  };
+    turn = 0,
+    player = service.player = {
+      name: 'Player 1',
+      location: 'A',
+      hp: 0,
+    };
 
   let history = service.history = [ 
     {
       turn,
       desc: 'welcome to the game',
-      location: 'Room_A',
+      location: 'A',
       hp: player.hp,
     },
   ];
@@ -27,7 +27,7 @@ ngAdventure.factory('playerService', ['$q', '$log', 'mapService', function($q, $
     return new $q((resolve, reject) => {
       turn++;
       let currentLocation = player.location,
-          newLocation = mapService.mapData[currentLocation][direction];
+        newLocation = mapService.mapData[currentLocation][direction];
       if (!newLocation) {
         history.unshift({
           turn,

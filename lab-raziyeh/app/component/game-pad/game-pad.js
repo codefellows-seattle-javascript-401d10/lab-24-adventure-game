@@ -1,4 +1,4 @@
-'use strict'
+'use strict';
 
 const angular = require('angular');
 const ngAdventure = angular.module('ngAdventure');

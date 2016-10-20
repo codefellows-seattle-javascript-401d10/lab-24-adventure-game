@@ -1,4 +1,4 @@
-b$bootstrap-sass-asset-helper: false !default;
+$bootstrap-sass-asset-helper: false !default;
 //
 // Variables
 // --------------------------------------------------
@@ -541,28 +541,28 @@ $tooltip-arrow-color:         $tooltip-bg !default;
 //##
 
 //** Popover body background color
-$popover-bg:                          #fff !default;
-//** Popover maximum width
-$popover-max-width:                   276px !default;
-//** Popover border color
-$popover-border-color:                rgba(0,0,0,.2) !default;
-//** Popover fallback border color
-$popover-fallback-border-color:       #ccc !default;
+// $popover-bg:                          #fff !default;
+// //** Popover maximum width
+// $popover-max-width:                   276px !default;
+// //** Popover border color
+// $popover-border-color:                rgba(0,0,0,.2) !default;
+// //** Popover fallback border color
+// $popover-fallback-border-color:       #ccc !default;
 
-//** Popover title background color
-$popover-title-bg:                    darken($popover-bg, 3%) !default;
+// //** Popover title background color
+// $popover-title-bg:                    darken($popover-bg, 3%) !default;
 
-//** Popover arrow width
-$popover-arrow-width:                 10px !default;
-//** Popover arrow color
-$popover-arrow-color:                 $popover-bg !default;
+// //** Popover arrow width
+// $popover-arrow-width:                 10px !default;
+// //** Popover arrow color
+// $popover-arrow-color:                 $popover-bg !default;
 
-//** Popover outer arrow width
-$popover-arrow-outer-width:           ($popover-arrow-width + 1) !default;
-//** Popover outer arrow color
-$popover-arrow-outer-color:           fade_in($popover-border-color, 0.05) !default;
-//** Popover outer arrow fallback color
-$popover-arrow-outer-fallback-color:  darken($popover-fallback-border-color, 20%) !default;
+// //** Popover outer arrow width
+// $popover-arrow-outer-width:           ($popover-arrow-width + 1) !default;
+// //** Popover outer arrow color
+// $popover-arrow-outer-color:           fade_in($popover-border-color, 0.05) !default;
+// //** Popover outer arrow fallback color
+// $popover-arrow-outer-fallback-color:  darken($popover-fallback-border-color, 20%) !default;
 
 
 //== Labels
@@ -746,19 +746,19 @@ $panel-danger-heading-bg:     $state-danger-bg !default;
 //
 //##
 
-//** Padding around the thumbnail image
-$thumbnail-padding:           4px !default;
-//** Thumbnail background color
-$thumbnail-bg:                $body-bg !default;
-//** Thumbnail border color
-$thumbnail-border:            #ddd !default;
-//** Thumbnail border radius
-$thumbnail-border-radius:     $border-radius-base !default;
+// //** Padding around the thumbnail image
+// $thumbnail-padding:           4px !default;
+// //** Thumbnail background color
+// $thumbnail-bg:                $body-bg !default;
+// //** Thumbnail border color
+// $thumbnail-border:            #ddd !default;
+// //** Thumbnail border radius
+// $thumbnail-border-radius:     $border-radius-base !default;
 
-//** Custom text color for thumbnail captions
-$thumbnail-caption-color:     $text-color !default;
-//** Padding around the thumbnail caption
-$thumbnail-caption-padding:   9px !default;
+// //** Custom text color for thumbnail captions
+// $thumbnail-caption-color:     $text-color !default;
+// //** Padding around the thumbnail caption
+// $thumbnail-caption-padding:   9px !default;
 
 
 //== Wells
@@ -792,33 +792,33 @@ $badge-border-radius:         10px !default;
 //
 //##
 
-$breadcrumb-padding-vertical:   8px !default;
-$breadcrumb-padding-horizontal: 15px !default;
-//** Breadcrumb background color
-$breadcrumb-bg:                 #f5f5f5 !default;
-//** Breadcrumb text color
-$breadcrumb-color:              #ccc !default;
-//** Text color of current page in the breadcrumb
-$breadcrumb-active-color:       $gray-light !default;
-//** Textual separator for between breadcrumb elements
-$breadcrumb-separator:          "/" !default;
+// $breadcrumb-padding-vertical:   8px !default;
+// $breadcrumb-padding-horizontal: 15px !default;
+// //** Breadcrumb background color
+// $breadcrumb-bg:                 #f5f5f5 !default;
+// //** Breadcrumb text color
+// $breadcrumb-color:              #ccc !default;
+// //** Text color of current page in the breadcrumb
+// $breadcrumb-active-color:       $gray-light !default;
+// //** Textual separator for between breadcrumb elements
+// $breadcrumb-separator:          "/" !default;
 
 
 //== Carousel
 //
 //##
 
-$carousel-text-shadow:                        0 1px 2px rgba(0,0,0,.6) !default;
+// $carousel-text-shadow:                        0 1px 2px rgba(0,0,0,.6) !default;
 
-$carousel-control-color:                      #fff !default;
-$carousel-control-width:                      15% !default;
-$carousel-control-opacity:                    .5 !default;
-$carousel-control-font-size:                  20px !default;
+// $carousel-control-color:                      #fff !default;
+// $carousel-control-width:                      15% !default;
+// $carousel-control-opacity:                    .5 !default;
+// $carousel-control-font-size:                  20px !default;
 
-$carousel-indicator-active-bg:                #fff !default;
-$carousel-indicator-border-color:             #fff !default;
+// $carousel-indicator-active-bg:                #fff !default;
+// $carousel-indicator-border-color:             #fff !default;
 
-$carousel-caption-color:                      #fff !default;
+// $carousel-caption-color:                      #fff !default;
 
 
 //== Close
