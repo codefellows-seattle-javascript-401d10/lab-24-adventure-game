@@ -33,7 +33,12 @@ module.exports = {
         loader: 'html',
       },
       {
+        test: /\.scss$/,
+        loader: ExtractTextPlugin.extract('style', 'css!resolve-url!sass?sourceMap'),
+      },
+      {
         test: /\.(woff|ttf|svg|eot).*/,
+        loader: 'url?limit=10000&name=font/[hash].[ext]',
       },
     ],
   },

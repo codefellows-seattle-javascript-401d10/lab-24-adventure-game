@@ -1,7 +1,7 @@
 'use strict';
 
 // require sass
-require('./_game-history.scss');
+// require('./_game-history.scss');
 
 const angular = require('angular');
 const textZ = angular.module('textZ');

@@ -1,6 +1,6 @@
 'use strict';
 
-require('./_player-info.scss');
+// require('./_player-info.scss');
 
 const angular = require('angular');
 const textZ = angular.module('textZ');
