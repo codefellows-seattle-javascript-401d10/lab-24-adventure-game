@@ -12,7 +12,7 @@ function playerService($q, $log, mapService){
   //add service features
   let turn = 0;
   let player = service.player = {
-    name: '',
+    name: 'Surviver',
     location: 'Entry',
     hp: 20,
     inventory: [],
