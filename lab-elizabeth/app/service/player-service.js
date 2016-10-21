@@ -15,7 +15,7 @@ function playerService($q, $log, mapService){
     name: 'Surviver',
     location: 'Entry',
     hp: 20,
-    inventory: ['tin of beans', 'stick'],
+    // inventory: ['tin of beans', 'stick'],
   };
 
   let history = service.history = [
