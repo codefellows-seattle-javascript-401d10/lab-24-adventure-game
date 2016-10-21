@@ -3,7 +3,7 @@
 const angular = require('angular');
 const textZ = angular.module('textZ');
 
-textZ.factory('playerService', ['$q', '$log', playerService]);
+textZ.factory('playerService', ['$q', '$log', 'mapService', playerService]);
 
 function playerService($q, $log, mapService){
   $log.debug('init playerService');
@@ -40,7 +40,6 @@ function playerService($q, $log, mapService){
           location: player.location,
           hp: player.hp,
         });
-        console.log('history', history);
         return reject('');
       }
 
@@ -50,7 +49,6 @@ function playerService($q, $log, mapService){
         desc: mapService.mapData[newLocation].desc,
         hp: player.hp,
       });
-      console.log('history', history);
       player.location = newLocation;
       return resolve(player.location);
     });
