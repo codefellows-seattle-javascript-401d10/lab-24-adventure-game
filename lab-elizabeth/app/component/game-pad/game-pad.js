@@ -16,7 +16,7 @@ textZ.controller('GamePadController', ['$log', 'playerService', GamePadControlle
 function GamePadController($log, playerService){
   $log.debug('init gamePadCtrl');
 
-  this.directions = ['north', 'south', 'east', 'west'];
+  this.directions = ['north', 'south', 'east', 'west', 'up', 'down'];
   this.moveDirection = this.directions[0];
 
   this.movePlayer = function(){
