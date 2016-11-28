@@ -8,62 +8,55 @@ ngAdventure.factory('mapService', ['$log', function($log){
 
   let service = {};
   service.mapData = {
-    A: {
-      desc: 'You are in room Room_A. there are two paths leaving this room. the lights are dim',
-      south: 'D',
-      east: 'B',
+    Room0: {
+      desc: 'You are in room Room_1. there are two paths leaving this room. down and right',
+      down: 'D',
+      right: 'B',
     },
-    B: {
-      desc: 'You are in room Room_B. you cant see anything', 
-      west: 'A',
-      east:'C',
+    Room1: {
+      desc: 'You are in room Room_2. there are two paths leaving this room. left and right', 
+      left: 'A',
+      right:'C',
     },
-    C: {
-      desc: 'You are in room Room_C. there is a path to the north. where you see some light', 
-      west: 'B',
-      south:'E',
+    Room2: {
+      desc: 'You are in room Room_3. there are two paths leaving this room. left and down', 
+      left: 'B',
+      down:'E',
     },
-    D: {
-      desc: 'You are in room Room_D, you here crazy sounds to the south',
-      north: 'A',
-      south: 'F',
+    Room3: {
+      desc: 'You are in room Room_4, there are two paths leaving this room. up and down',
+      up: 'A',
+      down: 'F',
     },
-    E: {
-      desc: 'You are in room Room_E, you here crazy sounds to the south',
-      north: 'C',
-      south: 'G',
+    Room4: {
+      desc: 'You are in room Room_5, there are two paths leaving this room. up and down',
+      up: 'C',
+      down: 'G',
     },
-    F: {
-      desc: 'You are in room Room_F, you here crazy sounds to the south',
-      north: 'D',
-      south: 'H',
+    Room5: {
+      desc: 'You are in room Room_6, there are two paths leaving this room. up and down',
+      up: 'D',
+      down: 'H',
     },
-    G: {
-      desc: 'You are in room Room_G, you here crazy sounds to the south',
-      north: 'E',
-      south: 'M',
+    Room6: {
+      desc: 'You are in room Room_7, there are two paths leaving this room. up and down',
+      up: 'E',
+      down: 'M',
     },
-    H: {
-      desc: 'You are in room Room_H, you here crazy sounds to the south',
-      north: 'F',
-      east: 'K',
+    Room7: {
+      desc: 'You are in room Room_8, there are two paths leaving this room. up and right',
+      up: 'F',
+      right: 'K',
     },
-    K: {
-      desc: 'You are in room Room_K, you here crazy sounds to the south',
-      west: 'H',
-      east: 'M',
+    Room8: {
+      desc: 'You are in room Room_9, there are two paths leaving this room. left and right',
+      left: 'H',
+      right: 'M',
     },
-    M: {
-      desc: 'You are in room Room_M, you here crazy sounds to the south',
-      north: 'G',
-      west:'K',
-    },
-    noroom: {
-      desc: 'you are stuck in quick sand',
-      south: 'X',
-      north: 'X',
-      east: 'X',
-      west: 'A',
+    Room9: {
+      desc: 'You are in room Room_10, there are two paths leaving this room. up and left',
+      up: 'G',
+      left:'K',
     },
   };
   return service;

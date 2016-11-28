@@ -10,15 +10,15 @@ ngAdventure.factory('playerService', ['$q', '$log', 'mapService', function($q, $
     turn = 0,
     player = service.player = {
       name: 'Player 1',
-      location: 'A',
+      location: 'Room0',
       hp: 0,
     };
 
   let history = service.history = [ 
     {
       turn,
-      desc: 'welcome to the game',
-      location: 'A',
+      desc: 'welcome to the Room Game',
+      location: 'Room0',
       hp: player.hp,
     },
   ];
@@ -31,12 +31,12 @@ ngAdventure.factory('playerService', ['$q', '$log', 'mapService', function($q, $
       if (!newLocation) {
         history.unshift({
           turn,
-          desc: 'you hit a wall',
+          desc: 'You hit a wall',
           location: player.location,
-          hp: player.hp,
+          hp: (player.hp)--,
         });
         console.log('history', history);
-        return reject('no room in that direction');
+        return reject('No room in that direction');
       }
 
       history.unshift({

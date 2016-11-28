@@ -6,7 +6,7 @@ require('./_player-info.scss');
 const angular = require('angular');
 const ngAdventure = angular.module('ngAdventure');
 
-ngAdventure.component('playerInfo', { /// this sets the tag to be <player-info> </player-info>
+ngAdventure.component('playerInfo', { 
   template: require('./player-info.html'),
   controller: 'PlayerInfoController',
   controllerAs: 'playerInfoCtrl',
