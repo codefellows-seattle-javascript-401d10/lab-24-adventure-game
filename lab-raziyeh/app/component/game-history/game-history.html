@@ -1,0 +1,16 @@
+  <section class="game-history">
+      <div class="panel panel-primary" ng-repeat="turn in gameHistoryCtrl.history"> 
+        <div class="panel-heading"> 
+          <h1 class="panel-title">Turn {{turn.turn}} ::  {{turn.location}}</h1>
+        </div>
+        <div class="panel-body">
+          <div class="col-md-6">
+            {{turn.desc}}
+          </div>
+          <div class="col-md-6">
+            Try
+          </div>
+      </div>
+      <div class="panel-footer">  HP </span> {{turn.hp}}</div>
+      </div>
+  </section>
